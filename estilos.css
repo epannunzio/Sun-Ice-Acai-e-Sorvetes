@@ -150,7 +150,7 @@ a:hover {
 }
 
 .sobre a:hover {
-  background-color: coral;
+  background-color: rgb(247, 247, 105);
   text-decoration: none;
   color: white
 }
