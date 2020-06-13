@@ -25,7 +25,7 @@ body {
   body {
     background-attachment: fixed;
     font-size: 18px;
-    background-size: cover;
+    background-size:cover;
   }
 }
 
@@ -101,7 +101,7 @@ a:hover {
 .site-subtitle,
 .site-title {
   text-align: center;
-  color: white;
+  color: rgb(64, 3, 77);
 }
  
 .site-title {
