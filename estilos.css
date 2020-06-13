@@ -43,7 +43,7 @@ header {
 }
   
 .menu {
-  background-color: black;
+  background-color: rgb(64, 3, 77);
   position: fixed;
   width: 100vw;
   top: 0;
