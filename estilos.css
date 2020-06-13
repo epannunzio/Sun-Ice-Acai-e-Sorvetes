@@ -101,7 +101,8 @@ a:hover {
 .site-subtitle,
 .site-title {
   text-align: center;
-   color: rgb(64, 3, 77); text-shadow: yellow 0.1em 0.1em 0.2em;
+  color: rgb(64, 3, 77); 
+  text-shadow: yellow 0.1em 0.1em 0.2em;
 }
  
 .site-title {
