@@ -233,6 +233,10 @@ margin-left: 2em;
   transition: transform 500ms;
 }
 
+figcaption {
+  font-weight:bold;
+}
+
 /*.img-portfolio:hover {
   transform: scale(1.2) rotate(-2deg);
 }*/
