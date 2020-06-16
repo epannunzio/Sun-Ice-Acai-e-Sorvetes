@@ -8,6 +8,7 @@
 body {
     background-image: url('https://www.energianafruta.com.br/uploads/slides/2019/12/energia-na-fruta.jpg');
     background-size: cover;
+    background-attachment:fixed;
     font-family:'Rosario', sans-serif;
     height: 100vh; 
     font-size: 12px;
@@ -54,6 +55,7 @@ header {
 .menu ul {
   display:flex;
   justify-content: space-around;
+  margin-left:60px;
 }
   
 .menu li {
@@ -265,11 +267,11 @@ section#contato {
 }
 
 #copyright {
-  overflow: hidden;
-  padding: 1.87em 0em;
+	overflow: hidden;
+	padding: 1.87em 0em;
 }
 
 #copyright p {
-  text-align: center;
-  font-size:2vh;
+	text-align: center;
+	font-size:2vh;
 }
