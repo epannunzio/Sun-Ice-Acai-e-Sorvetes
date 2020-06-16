@@ -263,3 +263,13 @@ section#contato {
   display: block;
   text-align: center;
 }
+
+#copyright {
+	overflow: hidden;
+	padding: 1.87em 0em;
+}
+
+#copyright p {
+	text-align: center;
+	font-size:2vh;
+}
