@@ -11,7 +11,6 @@ body {
     font-family:'Rosario', sans-serif;
     height: 100vh; 
     font-size: 12px;
-    background-attachment:fixed;
 }
 
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
@@ -122,6 +121,8 @@ a:hover {
 .portfolio {
   padding: 2em;
   min-height: 100vh; 
+  color:white;
+  font-family:'Rosario', sans-serif;
 }
 
 @media (min-width: 1200px) {
@@ -136,7 +137,7 @@ a:hover {
 .contato h2,
 .portfolio h2 {
   font-family:'Rosario', sans-serif;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   font-size: 2em;
   color: white;
 }
@@ -262,4 +263,3 @@ section#contato {
   display: block;
   text-align: center;
 }
-
