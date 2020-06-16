@@ -265,11 +265,11 @@ section#contato {
 }
 
 #copyright {
-	overflow: hidden;
-	padding: 1.87em 0em;
+  overflow: hidden;
+  padding: 1.87em 0em;
 }
 
 #copyright p {
-	text-align: center;
-	font-size:2vh;
+  text-align: center;
+  font-size:2vh;
 }
