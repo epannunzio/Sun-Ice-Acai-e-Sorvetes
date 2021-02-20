@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style= "background-color: #aa5ea4;">
         <div class="container-fluid">
             <a class="navbar-brand fonte-titulo-navbar" href="#">Sun Ice Açaí &amp; Sorvetes</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,10 +23,10 @@
                     <a class="nav-link active fonte-titulo-navbar" aria-current="page" href="#">Início</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fonte-titulo-navbar" href="#">Cardápio</a>
+                    <a class="nav-link fonte-titulo-navbar" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cardápio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link fonte-titulo-navbar" href="#">Contato</a>
+                    <a class="nav-link fonte-titulo-navbar" data-bs-toggle="modal" data-bs-target="#exampleModalcontato" href="#">Contato</a>
                   </li>
                 </ul>
             </div>
@@ -66,7 +66,7 @@
         </div>
     </section>
 
-<section class="sobre container">
+<section class="sobre container-fluid bg-light">
     <h2 class="text-md-start">Sobre nós</h2>
     <figure class="avatar text-end">
         <img class="img-fluid" src="img/logo.jpg" alt="logotipo da loja">
@@ -79,11 +79,11 @@
 
     <p>Venha fazer parte dessa família! Seja muito bem vindo(a)!</p>
 </section>
-<section class="portfolio container" id="portfolio">
+<section class="portfolio container-fluid bg-light" id="portfolio">
         <h2>Apresentação</h2>
         <figure class="avatar text-end">
           <img class="img-fluid" src="img/loja.jpg" alt="fachada da loja">
-      </figure>
+        </figure>
 
 <section class="container">
       <div class="row row-cols-2 justify-content-center">
@@ -118,6 +118,40 @@
 </section>
 </section>
 </main>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nosso cardápio</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="img/cardapio.jpg" alt="...">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalcontato" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Endereço: Rua Agudos 831 - Jd.Rochdale / Osasco</p>
+        <p>Nosso whatsapp para Delivery: 11 93013-6304</p>
+        <p>Siga nosso Instagram: <a href="https://www.instagram.com/suniceacaisorvetes/" target="_blank">@suniceacaisorvetes</a> -
+          Tem sempre várias novidades e promoções por lá ;)
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
     <section class="contato container" id="contato">
         <h2>Contato</h2>
           <div class='grid icons' ,contato>
@@ -135,7 +169,7 @@
        
       <h2>Horário de funcionamento</h2>
         <p class="horario">Aberto todos os dias das 14h ás 22h</p>   
-        <p class="horario">-- Consulte novos horários em razão do Covid-19 --</p>
+        <p class="horario">-- Seguimos todas as normas de segurança em razão ao Covid-19 --</p>
     </section>
 
 <footer> 
