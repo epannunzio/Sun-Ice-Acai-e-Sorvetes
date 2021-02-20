@@ -1,121 +1,26 @@
-/* soft reset do css */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html, body{
+  overflow-x: hidden;
 }
 
-body {
-    background-image: url('https://www.energianafruta.com.br/uploads/slides/2019/12/energia-na-fruta.jpg');
-    background-size: cover;
-    background-attachment:fixed;
-    font-family:'Rosario', sans-serif;
-    height: 100vh; 
-    font-size: 12px;
+.card-largura {
+  max-width: 18rem;
 }
 
-/* se a tela tiver pelo menos 400px vai carregar esses estilos */
-@media (min-width: 400px) {
-  body {
-    font-size: 14px;
-  }
+.imagem-acai {
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 80%;
 }
 
-/* breackpoint */
-@media (min-width: 600px) {
-  body {
-    background-attachment: fixed;
-    font-size: 18px;
-    background-size:cover;
-  }
+.fonte-titulo-logo {
+  font-family: 'Rancho', cursive;
+  color: whitesmoke;
+  font-size: 40px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 0.1em 0.1em 0.1em black;
 }
 
-/* breakpoint */
-@media (min-width: 1220px) {
-  body {
-    font-size: 20px;
-  }
-}
-
-header {
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-.menu {
-  background-color: rgb(64, 3, 77);
-  position: fixed;
-  width: 100vw;
-  top: 0;
-  z-index: 1;
-}
-  
-.menu ul {
-  display:flex;
-  justify-content: space-around;
-  margin-left:60px;
-}
-  
-.menu li {
-  list-style:none;
-}
- 
-.menu a {
-display: block;
-padding: 10px 20px;
-transition: background-color 1s, color 1s;
-}
-
-.menu a:active,
-.menu a:hover {
-  background-color: white;
-  color: black;
-}
-
-a{
-   color: white;
-   text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
- 
-.titulo {
-  transform: scale(0.2) translateY(50vh); 
-  opacity: 0;
-  animation: 1s ease 500ms animacaoTitulo forwards; 
-}
-
-@keyframes animacaoTitulo {
-  from {
-    transform: scale(0.2) translateY(50vh);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1) translateY(0); 
-    opacity: 1;
-  }
-}
-
-.site-subtitle,
-.site-title {
-  text-align: center;
-  color: rgb(64, 3, 77); 
-  text-shadow: yellow 0.1em 0.1em 0.2em;
-}
- 
-.site-title {
-  font-size: 6em;
-  font-family:'Cantata One', serif;
-}
-
-.site-subtitle {
-  font-family:'Merienda One', cursive;
-  line-height: 1.8em;
-  font-size:2.5em;
+.fonte-titulo-navbar {
+  font-family: 'Rancho', cursive;
 }
 
 .sobre,
@@ -123,8 +28,8 @@ a:hover {
 .portfolio {
   padding: 2em;
   min-height: 100vh; 
-  color:white;
-  font-family:'Rosario', sans-serif;
+  color:rgb(43, 5, 48);
+  font-family: 'Rancho', cursive;
 }
 
 @media (min-width: 1200px) {
@@ -138,127 +43,77 @@ a:hover {
 .sobre h2,
 .contato h2,
 .portfolio h2 {
-  font-family:'Rosario', sans-serif;
+  font-family: 'Rancho', cursive;
   margin-bottom: 1em;
-  font-size: 2em;
-  color: white;
+  font-size: 50px;
+  color: rgb(44, 5, 59);
 }
 
 .sobre p {
-  color: white;
+  color:rgb(44, 8, 58);
+  font-size: 30px;
   text-indent: 1.4em;
   margin-bottom: 1.4em;
   text-align: justify;
 }
 
 .sobre a {
-  color: white;
+  color: rgb(107, 14, 107);
 }
 
-.sobre a:hover {
-  background-color: rgb(247, 247, 105);
-  text-decoration: none;
-  color: white
+.sobre .avatar .img-fluid {
+  margin-left: 2em;
+  border-radius: 5%;
 }
 
-.sobre .avatar {
-margin-left: 2em;
+.portfolio .avatar .img-fluid {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+
+.horario {
+  font-size: 25px;
 }
 
 @media (min-width: 600px) {
   .sobre .avatar {
-    float: right;
+  float: right;
   }
 }
 
-.portfolio .grid {
-  display: grid;
-  gap: 2em;
-}
-
-@media (min-width: 560px) {
-  .portfolio .grid {
-    grid-template-columns: 240px 240px
-  }
-}
-
-@media (min-width: 880px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(2, 260px);
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh - 8em - 48px);
-  }
-}
-
-.flip-card {
-  height:180px;
-  perspective: 1000px;
-}
-
-.flip-card:hover .card {
-  transform: rotateY(180deg);
-}
-
-.card {
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 3s;
-}
-
-.card-front,
-.card-back {
-  backface-visibility: hidden;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.card-back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(64, 3, 77);
-  height: 180px;
-  width: 100%;
-  transform: rotateY(180deg);
-}
-
-.portfolio figure {
-  text-align: center;
-}
-
-.img-portfolio {
-  height: 180px;
-  width: 100%;
+.borda-card {
+  border:solid 1px;
+  box-shadow: 10px 10px 10px 5px black;
   object-fit: cover;
-  object-position: left bottom;
+  height: 200px;
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.img-portfolio .img-fluid {
+  height: 180px;
+  width: 100%;
   transition: transform 500ms;
 }
-
-figcaption {
-  font-weight:bold;
-}
-
-/*.img-portfolio:hover {
-  transform: scale(1.2) rotate(-2deg);
-}*/
 
 .contato .icons {
   text-align: center;
 }
 
 .contato a {
-  color: white;
-  font-size: 4em;
+  color:rgb(107, 14, 107);
+  font-size: 5em;
   transition: text-shadow 1s;
+  text-decoration: none;
 }
 
 .contato a:active,
 .contato a:hover {
-text-decoration:none;
-text-shadow: 0px 0px 20px rgb(64, 3, 77);
+  text-shadow: 20px 5px 5px rgb(107, 14, 107);
+  color:inherit;
 }
 
 section#contato {
@@ -266,12 +121,10 @@ section#contato {
   text-align: center;
 }
 
-#copyright {
-	overflow: hidden;
-	padding: 1.87em 0em;
-}
-
-#copyright p {
-	text-align: center;
-	font-size:2vh;
+.footer {
+  background-color: rgb(107, 14, 107);
+  color: white;
+  font-family: 'Rancho', cursive;
+  font-size: 25px;
+  text-align: center;
 }
