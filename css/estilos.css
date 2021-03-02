@@ -72,6 +72,11 @@ html, body{
   border-radius: 5%;
 }
 
+.modal-body {
+  width: 100%;  
+  overflow-x: scroll;
+}
+
 .horario {
   font-size: 25px;
 }
