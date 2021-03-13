@@ -12,6 +12,11 @@ html, body{
   object-position: 0 80%;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .fonte-titulo-logo {
   font-family: 'Rancho', cursive;
   color: whitesmoke;
@@ -72,8 +77,15 @@ html, body{
   border-radius: 5%;
 }
 
+#cardapio {
+    max-width: 100%;
+    width: 100%;
+    height: auto; 
+    overflow-x: scroll;
+}
+
 .horario {
-  font-size: 25px;
+   font-size: 25px;
 }
 
 @media (min-width: 600px) {
